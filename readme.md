@@ -1,46 +1,39 @@
-<h2 align="center">Hotel Imperial-Palace</h2>
+# Hotel Imperial-Palace
 
-<h3 align="center"> Home Page </h3>
+## About
+Welcome to **Hotel Imperial Palace**, a fully responsive website created using the basics of **HTML** and **CSS**. The website showcases a modern and clean design for a hotel, featuring pages for information about the hotel and other amenities.
 
-![Unable to load image file](https://github.com/pooranjoyb/Hotel_ImperialPalace/blob/master/samples/sample.png?raw=true)
+## How to Access This Project
 
----
+### Using the Link
+Access the website directly via:
+[Hotel Imperial-Palace](https://pooranjoyb.github.io/Hotel_ImperialPalace/)
 
-<h3 align="center"> About Page </h3>
+### Using Gitbash to Clone
+1. Open Gitbash.
+2. Clone the repository by entering the following command:
+   ```bash
+   git clone https://github.com/techcsispit/VanillaJS-Hotel_Website
+   ```
+3. Once cloned, navigate to the folder and open `index.html` in your browser.
 
-![Unable to load image file](https://github.com/pooranjoyb/Hotel_ImperialPalace/blob/master/samples/aboutpage.png?raw=true)
+## Bug Fixes
+- [ ] Images are not working for some reason 🤔
 
----
+## Features To Be Added
+- [ ] Animations
 
-<h3 align="center">
-Welcome to Hotel-Imperial Palace</h3>
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Creating an Issue: Before making any changes, create an issue explaining what you'd like to add or change and why
+2. Fork the repository.
+3. Create a new branch for your feature or bug fix.
+4. Make your changes and commit them.
+5. Push your changes to your forked repository.
+6. Open a pull request detailing your changes.
 
-<h4 align="center">
- This is a simple and a complete responsive website created using the basics of HTML &amp; CSS. </h4>
- 
- ---
+## Raising an Issue
+If you encounter any bugs or have feature requests, please create an issue in the repository. Provide detailed information to assist in addressing the problem.
 
- <h3 align="center">How to access this project ? </h3>
- 
-  **Using the link**
-https://pooranjoyb.github.io/Hotel_ImperialPalace/
-
-
- **Using Gitbash to clone**
-
-- Open Gitbash 
-
-- Copy the following command to clone this repository in your local storage:
-```
-https://pooranjoyb.github.io/Hotel_ImperialPalace/
-```
-- Hit the Enter key.
-
-It would take a few seconds to clone the repository onto your system.
-Note: Please note that cloning depends on the internet connection and the time would depend on your connection bandwidth. If Git is not able to clone due to a weak connection, it would display a fatal error and the user is requested to try again until the above message does not appear.
-
-- Check in the local drive by navigating to it manually.
-
-- Open the ***index.html*** file to view the project
-
-Contributions and Commits are apppreciated. 
+## Credits
+This project was developed by [Pooranjoy B.](https://github.com/pooranjoyb/Hotel_ImperialPalace). Contributions and commits are appreciated!
