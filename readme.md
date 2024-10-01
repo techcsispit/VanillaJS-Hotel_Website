@@ -5,10 +5,6 @@ Welcome to **Hotel Imperial Palace**, a fully responsive website created using t
 
 ## How to Access This Project
 
-### Using the Link
-Access the website directly via:
-[Hotel Imperial-Palace](https://pooranjoyb.github.io/Hotel_ImperialPalace/)
-
 ### Using Gitbash to Clone
 1. Open Gitbash.
 2. Clone the repository by entering the following command:
