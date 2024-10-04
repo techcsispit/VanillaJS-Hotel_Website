@@ -6,6 +6,27 @@
     scroll-behavior: smooth;
     transition: all 0.3s ease-out;
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 a {
     text-decoration: none;
@@ -147,6 +168,7 @@ a img:hover {
     color: whitesmoke;
     align-items: center;
     justify-content: center;
+    animation: slideIn 2s ease-in-out;
 }
 
 #head {
@@ -159,6 +181,7 @@ a img:hover {
     padding-left: 126px;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 button {
