@@ -34,7 +34,7 @@ button:hover {
 
 .frontpage {
     position: relative;
-    background: url(../img/aboutpage.jpg) no-repeat;
+    background: url(https://img.freepik.com/premium-photo/lobby-hotel-is-decorated-black-white_853677-2928.jpg) no-repeat;
     background-size: cover;
     opacity: 0.91;
 }
@@ -159,6 +159,12 @@ a img:hover {
     padding-left: 126px;
     align-items: center;
     justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border:none;
 }
 
 
