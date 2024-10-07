@@ -13,8 +13,14 @@
     justify-content: center;
 }
 
+.btn button{
+    border: none;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
 button {
-    padding: 7px 75px;
+    padding: 10px 60px;
     background-color: #8d0003;
     color: whitesmoke;
     margin-top: 22px;
@@ -25,6 +31,8 @@ button:hover {
     background-color: whitesmoke;
     color: #8d0003;
     font-weight: bold;
+    border: 1px solid #8d0003;
+    box-shadow: 8px 10px 10px 0 rgba(0,0,0,0.24);
 }
 
 .frontpage {
