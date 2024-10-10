@@ -13,7 +13,7 @@
     justify-content: center;
 }
 
-.btn button{
+.btn button {
     border: none;
     border-radius: 8px;
     font-weight: 900;
@@ -32,7 +32,7 @@ button:hover {
     color: #8d0003;
     font-weight: bold;
     border: 1px solid #8d0003;
-    box-shadow: 8px 10px 10px 0 rgba(0,0,0,0.24);
+    box-shadow: 8px 10px 10px 0 rgba(0, 0, 0, 0.24);
 }
 
 .frontpage {
@@ -77,7 +77,7 @@ button:hover {
 
 .navbar #navbarmain li a {
     font-size: 17px;
-    color: white;
+    color: black;
     text-decoration: none;
     padding-left: 19px;
     padding-right: 19px;
