@@ -67,6 +67,7 @@ button:hover {
     align-items: center;
     width: 100%;
     justify-content: center;
+    background-color: #943a3a;
 }
 
 .navbar ul {
@@ -75,19 +76,33 @@ button:hover {
     padding: 12px;
 }
 
+.navbar #navbarmain li div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+}
+
 .navbar #navbarmain li a {
-    font-size: 17px;
+    font-size: 12px;
     color: white;
     text-decoration: none;
     padding-left: 19px;
     padding-right: 19px;
+    font-weight: 600;
 }
 
-.navbar #navbarmain li a:hover {
-    color: #8d0003;
-    font-size: 17px;
-    background-color: whitesmoke;
-    border-radius: 15px;
+/* .navbar #navbarmain li a:hover {
+    color: whitesmoke;
+    /* font-size: 17px; */
+    /* background-color: #712d2d; */
+    /* border-radius: 8px; */
+    /* border: 1px solid whitesmoke; */
+/* } */ 
+
+.navbar #navbarmain li div:hover {
+    background-color: #712d2d;
+    border: 1px solid whitesmoke;
 }
 
 .social {
@@ -166,6 +181,7 @@ a img:hover {
 
 .kitchen #sum1,
 #sum2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     font-size: 18px;
     color: #8d0003;
@@ -190,6 +206,7 @@ a img:hover {
     display: flex;
     justify-content: center;
     padding-bottom: 8px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .foodcolumn div:hover {
@@ -230,6 +247,7 @@ a img:hover {
     font-size: 18px;
     margin: 18px;
     color: #8d0003;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .rooms #rsum2 {
@@ -255,7 +273,7 @@ a img:hover {
     padding-top: 100px;
     padding-left: 32px;
     padding-right: 22px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 #r1,
@@ -296,6 +314,7 @@ a img:hover {
     font-size: 18px;
     color: #8d0003;
     margin: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .about #asum2 {
@@ -354,6 +373,7 @@ a img:hover {
     font-size: 18px;
     margin: 18px;
     color: #8d0003;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .contact #csum2 {
@@ -431,11 +451,13 @@ form input {
 /* Footer  */
 
 footer {
-    background-color: #8d0003;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #943a3a;
     color: white;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    height: 35px;
+    height: 80px;
     padding-top: 7px;
 }
