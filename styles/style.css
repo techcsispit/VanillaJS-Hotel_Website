@@ -7,16 +7,110 @@
     transition: all 0.3s ease-out;
 }
 
+/* Navbar specific styles in dark mode */
+
+
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#logo1 {
+    z-index: 1000;
+    /* Higher z-index to bring the logo above other elements */
+    position: relative;
+    /* Adjust positioning if necessary */
+    display: block;
+    /* Ensure it's not accidentally hidden */
+    visibility: visible;
+    /* Ensure visibility is set */
+}
+
+
 .btn button {
     border: none;
     border-radius: 8px;
     font-weight: 900;
+}/* The switch - the box around the slider */
+
+
+.togglebtn {
+    position: relative;
+    display: inline-block;
+    left: 5%;
+    width: 65px;
+    height: 35px;
+}
+
+/* Hide default HTML checkbox */
+.togglebtn input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 0%;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Move the slider when checked */
+.togglebtn input:checked+.slider {
+    background-color: black;
+}
+
+.togglebtn input:checked+.slider:before {
+    transform: translateX(30px);
+    /* Moves the slider knob to the right */
+}
+
+label svg {
+    position: absolute;
+    width: 30px;
+    z-index: 100;
+}
+
+label svg.sun {
+    left: -30px;
+    fill: #fff;
+    transition: 0.2s;
+}
+
+label svg.moon {
+    left: 65px;
+    fill: #fff;
+    transition: 0.2s;
 }
 
 button {
