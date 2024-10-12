@@ -187,7 +187,6 @@ a img:hover {
 .foodcolumn div:hover {
     background-color: rgba(240, 240, 240, 0.945);
     /* border: 2px solid red; */
-    position: relative;
     border-radius: 34px;
 }
 
@@ -209,19 +208,26 @@ a img:hover {
     width: 500px;
     padding: 30px;
     border-radius: 53px;
+    z-index: 1;
+    position:relative;
 }
 .fooddesc {
-    display: none;
+    color:#8d0003;
+    opacity:0;
+    z-index: -1;
     width:420px;
     padding: 10px;
-    margin-top:-10px;
+    margin-top:-100px;
     border-radius: 53px;
     margin-left: 40px;
     margin-right: 40px;
+    position:relative;
 }
 
 .fooddesc.show {
-    display:block;
+    margin-top:-20px;
+    opacity:1;
+    z-index:2;
 }
 
 /* Rooms */
