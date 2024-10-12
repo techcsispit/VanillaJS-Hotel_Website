@@ -86,12 +86,20 @@
         flex-direction: column;
     }
     
-    .foodbox img {
-        width: 100%;
-    }
-    
     .foodbox .fooddesc {
         font-weight: bold;
+    }
+
+    .foodbox img {
+        width: 100%;
+        padding: 30px;
+        border-radius: 53px;
+    }
+
+    .fooddesc{
+        width:80%;
+        margin-right:10%;
+        margin-left:10%;
     }
     /* Rooms */
     
@@ -147,7 +155,7 @@
         padding-right: 20px;
     }
     /* Footer */
-    
+
     footer {
         font-size: small;
     }

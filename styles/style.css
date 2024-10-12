@@ -13,7 +13,7 @@
     justify-content: center;
 }
 
-.btn button{
+.btn button {
     border: none;
     border-radius: 8px;
     font-weight: 900;
@@ -32,7 +32,7 @@ button:hover {
     color: #8d0003;
     font-weight: bold;
     border: 1px solid #8d0003;
-    box-shadow: 8px 10px 10px 0 rgba(0,0,0,0.24);
+    box-shadow: 8px 10px 10px 0 rgba(0, 0, 0, 0.24);
 }
 
 .frontpage {
@@ -157,7 +157,6 @@ a img:hover {
 
 
 /* Kitchen */
-
 .kitchen #intro {
     text-align: center;
     font-size: 50px;
@@ -180,41 +179,49 @@ a img:hover {
 .foodbox {
     display: flex;
     margin: 12px;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-}
-
-.foodcolumn .fooddesc {
-    color: #8d0003;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 8px;
 }
 
 .foodcolumn div:hover {
     background-color: rgba(240, 240, 240, 0.945);
     /* border: 2px solid red; */
+    position: relative;
     border-radius: 34px;
+}
+
+.foodcolumn {
+    display: flex;
+    justify-content: center;
+}
+
+.foodcolumn div:hover~.filter {
+    opacity: 0.75;
 }
 
 .foodbox div {
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .foodbox img {
-    width: 95%;
+    width: 500px;
     padding: 30px;
     border-radius: 53px;
 }
-
-.foodbox .foodcolumn {
-    box-sizing: border-box;
-    margin-left: 24px;
-    justify-content: center;
-    align-items: center;
+.fooddesc {
+    display: none;
+    width:420px;
+    padding: 10px;
+    margin-top:-10px;
+    border-radius: 53px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
+.fooddesc.show {
+    display:block;
+}
 
 /* Rooms */
 
