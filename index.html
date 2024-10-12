@@ -228,12 +228,20 @@
     <div class="contdata" id="c3">
         <div id="form" >
             <form type="post" id="myform" action="#">
-                <div id="fname"><label for="name">Name :&nbsp; <input type="text" name="uname" id="name" placeholder="Enter Your Name" required></label></div>
-                <div id="fmail"><label for="email">Email :&nbsp;&nbsp; <input type="text" name="umail" id="email" placeholder="Enter your email" required></label></div>
-                <div id="fphone"><label for="phone">Phone : <input type="number" name="uphone" id="phone" placeholder="Enter your Phone" required></label></div>
-                <div id="fissue"><label for="issue">Issue : &nbsp;&nbsp;&nbsp;<textarea name="uissue" id="issue" placeholder="Type your Issue here"></textarea></label></div>
+                <div class="info-boxes" id="fname"><label for="name">Name :&nbsp; <input type="text" name="uname" id="name" placeholder="Enter Your Name" required></label></div>
+                <div class="info-boxes" id="fmail"><label for="email">Email :&nbsp;&nbsp; <input type="text" name="umail" id="email" placeholder="Enter your email" required></label></div>
+                <div class="info-boxes" id="fphone"><label for="phone">Phone : <input type="number" name="uphone" id="phone" placeholder="Enter your Phone" required></label></div>
+                <div id="fissue">
+                    <div>
+                        <label for="issue">Issue :&nbsp;
+                        </label>
+                    </div>
+                    <div>
+                        <textarea name="uissue" id="issue" placeholder="Type your Issue here" rows="4" cols="25"></textarea>
+                    </div>
+                </div>
                 <div id="submit" class="btn">
-                    <button id="btnSubmit" type="submit" value="submit">Submit 
+                    <button id="btnSubmit" type="submit" value="submit">SUBMIT 
                     </button>
                 </div>
             </form>
