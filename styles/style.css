@@ -13,6 +13,11 @@
     justify-content: center;
 }
 
+.btn button{
+    border-radius: 8px;
+    font-weight: 900;
+}
+
 button {
     padding: 10px 60px;
     background-color: #8d0003;
@@ -26,6 +31,8 @@ button:hover {
     background-color: whitesmoke;
     color: #8d0003;
     font-weight: bold;
+    border: 1px solid #8d0003;
+    box-shadow: 8px 10px 10px 0 rgba(0,0,0,0.24);
 }
 
 .frontpage {
@@ -150,6 +157,7 @@ a img:hover {
 
 
 /* Kitchen */
+
 .kitchen #intro {
     text-align: center;
     font-size: 50px;
