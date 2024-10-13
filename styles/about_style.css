@@ -6,6 +6,8 @@
     scroll-behavior: smooth;
     transition: all 0.3s ease-out;
 }
+
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -88,6 +90,7 @@ button:hover {
     align-items: center;
     width: 100%;
     justify-content: center;
+    background-color: black;
 }
 
 .navbar ul {
@@ -97,19 +100,25 @@ button:hover {
     padding: 12px;
 }
 
+.navbar #navbarmain li div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+}
+
 .navbar #navbarmain li a {
-    font-size: 17px;
+    font-size: 12px;
     color: white;
     text-decoration: none;
     padding-left: 19px;
     padding-right: 19px;
 }
 
-.navbar #navbarmain li a:hover {
+.navbar #navbarmain li div:hover {
     color: black;
-    font-size: 17px;
-    background-color: whitesmoke;
-    border-radius: 15px;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid whitesmoke;
 }
 
 .social {
@@ -194,12 +203,14 @@ button {
 /* Footoer content */
 
 footer {
-    background-color: black;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: rgb(24, 24, 24);
     color: white;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    height: 35px;
+    height: 80px;
     padding-top: 7px;
 }
 

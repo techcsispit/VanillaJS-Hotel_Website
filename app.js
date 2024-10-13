@@ -7,8 +7,6 @@ hamburger.addEventListener("click", () => {
     navbar.classList.toggle("active");
 })
 
-
-
 const toggle = document.getElementById("toggle");
 toggle.addEventListener("change", function () {
     const divs = document.querySelectorAll("div");
