@@ -7,6 +7,16 @@ hamburger.addEventListener("click", () => {
     navbar.classList.toggle("active");
 })
 
+const dropdown = document.querySelectorAll('.foodbox img');
+
+// Loop through each image and attach the event listener
+dropdown.forEach((item) => {
+    item.addEventListener("click", () => {
+        const dropdown = item.nextElementSibling; // Selects the next .fooddesc for that image
+        dropdown.classList.toggle("show");
+    });
+});
+
 $(document).ready(function () {
     $("#btnSubmit").click(function (e) {
         var jsonData = {};
