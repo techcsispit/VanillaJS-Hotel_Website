@@ -119,6 +119,7 @@ button {
     color: whitesmoke;
     margin-top: 22px;
     cursor: pointer;
+    border: 1px solid rgb(224, 216, 216);
 }
 
 button:hover {
@@ -456,17 +457,23 @@ a img:hover {
 }
 
 .contdata {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
+    height: 70vh;
 }
 
 .contdata #form {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 22px;
-    margin-top: 52px;
+    width: 20%;
+    margin: 30px auto;
+    background-color: rgba(128, 128, 128, 0.564);
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 600;
+    color: #8f1114;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 form input {
@@ -476,8 +483,7 @@ form input {
 
 .cdesc {
     flex-direction: column;
-    padding: 20px;
-    margin-bottom: 100px;
+    padding: 10px;
     font-size: 18px;
     font-weight: bold;
     padding-left: 200px;
@@ -493,6 +499,29 @@ form input {
     padding: 4.5px;
 }
 
+.info-boxes input{
+    background-color: rgba(235, 231, 231, 0.63);
+    border: 1px solid white;
+    color: black;
+    border-radius: 7px;
+    font-weight: 500;
+}
+
+#form textarea{
+    margin-top: 6px;
+    background-color: rgba(235, 231, 231, 0.63);
+    border: 1px solid white;
+}
+
+#fissue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnSubmit {
+    padding: 10px 30px;
+}
 
 /* Footer  */
 
