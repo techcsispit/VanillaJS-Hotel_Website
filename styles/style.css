@@ -63,6 +63,7 @@
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 0%;
+    box-shadow: 1px 1px 7px black;
 }
 
 .slider:before {
@@ -88,7 +89,7 @@
 
 /* Move the slider when checked */
 .togglebtn input:checked+.slider {
-    background-color: black;
+    background-color: rgb(101, 25, 25);
 }
 
 .togglebtn input:checked+.slider:before {
