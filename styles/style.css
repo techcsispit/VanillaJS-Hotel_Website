@@ -63,6 +63,7 @@
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 0%;
+    box-shadow: 1px 1px 7px black;
 }
 
 .slider:before {
@@ -88,7 +89,7 @@
 
 /* Move the slider when checked */
 .togglebtn input:checked+.slider {
-    background-color: black;
+    background-color: #0f1032;
 }
 
 .togglebtn input:checked+.slider:before {
@@ -116,7 +117,7 @@ label svg.moon {
 
 button {
     padding: 10px 60px;
-    background-color: #8d0003;
+    background-color: #0f1032;
     color: whitesmoke;
     margin-top: 22px;
     cursor: pointer;
@@ -125,16 +126,17 @@ button {
 
 button:hover {
     background-color: whitesmoke;
-    color: #8d0003;
+    color: rgb(29, 16, 55);
     font-weight: bold;
-    border: 1px solid #8d0003;
+    border: 1px solid rgb(29, 16, 55);
     box-shadow: 8px 10px 10px 0 rgba(0, 0, 0, 0.24);
 }
 
 .frontpage {
     position: relative;
-    background: url(../img/hotel.jpg) no-repeat;
+    background: url("room2.png");
     background-size: cover;
+    background-color: #0f1032;
 }
 
 .frontpage::before {
@@ -155,6 +157,7 @@ button:hover {
     left: 1.25rem;
     padding-top: 0px;
     margin-bottom: 10px;
+    filter: invert();
 }
 
 .navbar {
@@ -164,7 +167,8 @@ button:hover {
     align-items: center;
     width: 100%;
     justify-content: center;
-    background-color: #943a3a;
+    background-color: #0f1032;
+    border-bottom: 2px solid rgb(216, 185, 10);
 }
 
 .navbar ul {
@@ -198,7 +202,7 @@ button:hover {
 /* } */ 
 
 .navbar #navbarmain li div:hover {
-    background-color: #712d2d;
+    background-color: #242777;
     border: 1px solid whitesmoke;
 }
 
@@ -236,9 +240,13 @@ button:hover {
     opacity: 0.75;
 }
 
-a img:hover {
-    cursor: pointer;
+a img {
     filter: invert();
+}
+
+a img:hover{
+    cursor: pointer;
+    filter: saturate();
 }
 
 
@@ -248,32 +256,40 @@ a img:hover {
     display: flex;
     flex-direction: column;
     height: 715px;
-    font-size: 40px;
+    font-size: 70px;
     padding-left: 300px;
     padding-right: 300px;
     padding-bottom: 495px;
-    font-weight: bolder;
-    color: #943a3a;
+    color: whitesmoke;
     align-items: center;
     justify-content: center;
+    font-family: "Abril Fatface", serif;
 }
 
 #contentsum1 {
-    color: #943a3a;
+    color: rgb(215, 166, 5);
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 35px;
     padding-top: 12px;
     font-weight: bolder;
 }
 
+.frontpage{
+    color: rgb(29, 16, 55);
+}
 
 /* Kitchen */
+
+.kitchen {
+    background-color: white;
+}
 
 .kitchen #intro {
     text-align: center;
     font-size: 50px;
     margin: 18px;
+    font-family: "Signika Negative", sans-serif;
 }
 
 .kitchen #sum1,
@@ -281,8 +297,9 @@ a img:hover {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     font-size: 18px;
-    color: #8d0003;
-    margin: 18px;
+    color: rgb(29, 16, 55);
+    margin: 0px 18px 18px 18px;
+    padding: 15px;
 }
 
 .kitchen #sum2 {
@@ -292,7 +309,7 @@ a img:hover {
 
 .foodbox {
     display: flex;
-    margin: 12px;
+    margin: 0px 12px 0px 12px;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 8px;
@@ -300,9 +317,13 @@ a img:hover {
 }
 
 .foodcolumn div:hover {
-    background-color: rgba(240, 240, 240, 0.945);
+    /* background-color: rgba(240, 240, 240, 0.945); */
     /* border: 2px solid red; */
     border-radius: 34px;
+}
+
+.foodcolumn div img:hover{
+    box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.496);
 }
 
 .foodcolumn {
@@ -327,7 +348,7 @@ a img:hover {
     position:relative;
 }
 .fooddesc {
-    color:#8d0003;
+    color:rgb(29, 16, 55);
     opacity:0;
     z-index: -1;
     width:420px;
@@ -347,18 +368,24 @@ a img:hover {
 
 /* Rooms */
 
+.rooms {
+    background-color: white;
+}
+
 .rooms #rintro {
     text-align: center;
     font-size: 50px;
     margin: 18px;
+    font-family: "Signika Negative", sans-serif;
 }
 
 .rooms #rsum1,
 #rsum2 {
     text-align: center;
     font-size: 18px;
-    margin: 18px;
-    color: #8d0003;
+    margin: 0px 18px 18px 18px;
+    padding: 15px;
+    color: rgb(29, 16, 55);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -401,6 +428,10 @@ a img:hover {
 
 /* ABout Us */
 
+.about {
+    background-color: white;
+}
+
 .aboutpic {
     position: relative;
 }
@@ -418,14 +449,16 @@ a img:hover {
     text-align: center;
     font-size: 50px;
     margin: 18px;
+    font-family: "Signika Negative", sans-serif;
 }
 
 .about #asum1,
 #asum2 {
     text-align: center;
     font-size: 18px;
-    color: #8d0003;
-    margin: 18px;
+    color: rgb(29, 16, 55);
+    margin: 0px 18px 18px 18px;
+    padding: 15px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -459,34 +492,38 @@ a img:hover {
 
 /* contact Us */
 
+
 .contdata {
     position: relative;
 }
 
 .contdata::before {
     content: "";
-    background: url(../socials/contact.jpg) no-repeat center center/cover;
+    background: url(contact.jpg) no-repeat center center/cover;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .contact #cintro {
     text-align: center;
     font-size: 55px;
     margin: 18px;
+    font-family: "Signika Negative", sans-serif;
 }
 
 .contact #csum1,
 #csum2 {
     text-align: center;
     font-size: 18px;
-    margin: 18px;
-    color: #8d0003;
+    margin: 0px 18px 0px 18px;
+    padding: 15px;
+    color: rgb(29, 16, 55);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 .contact #csum2 {
     font-size: 15px;
@@ -505,11 +542,11 @@ a img:hover {
     justify-content: center;
     width: 20%;
     margin: 30px auto;
-    background-color: rgba(128, 128, 128, 0.564);
+    background-color: #9597d1a6;;
     border-radius: 10px;
     padding: 20px;
     font-weight: 600;
-    color: #8f1114;
+    color: rgb(29, 16, 55);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -565,7 +602,7 @@ form input {
 footer {
     font-size: 12px;
     font-weight: 600;
-    background-color: #943a3a;
+    background-color: #0f1032;
     color: white;
     display: flex;
     align-items: center;
