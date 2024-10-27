@@ -352,7 +352,7 @@ a img:hover{
     position:relative;
 }
 .fooddesc {
-    color:var(--text);
+    color:rgb(29, 16, 55);
     opacity:0;
     z-index: -1;
     width:420px;
