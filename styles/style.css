@@ -7,6 +7,10 @@
     transition: all 0.3s ease-out;
 }
 
+:root{
+    --text-color : #9000ff;
+}
+
 /* Navbar specific styles in dark mode */
 
 
@@ -297,7 +301,7 @@ a img:hover{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     font-size: 18px;
-    color: rgb(29, 16, 55);
+    color: var(--text-color);
     margin: 0px 18px 18px 18px;
     padding: 15px;
 }
@@ -385,7 +389,7 @@ a img:hover{
     font-size: 18px;
     margin: 0px 18px 18px 18px;
     padding: 15px;
-    color: rgb(29, 16, 55);
+    color: var(--text-color);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -456,7 +460,7 @@ a img:hover{
 #asum2 {
     text-align: center;
     font-size: 18px;
-    color: rgb(29, 16, 55);
+    color: var(--text-color);
     margin: 0px 18px 18px 18px;
     padding: 15px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -512,6 +516,7 @@ a img:hover{
     font-size: 55px;
     margin: 18px;
     font-family: "Signika Negative", sans-serif;
+    color: black;
 }
 
 .contact #csum1,
@@ -520,7 +525,7 @@ a img:hover{
     font-size: 18px;
     margin: 0px 18px 0px 18px;
     padding: 15px;
-    color: rgb(29, 16, 55);
+    color: var(--text-color);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
