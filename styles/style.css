@@ -121,7 +121,7 @@ label svg.moon {
 
 button {
     padding: 10px 60px;
-    background-color: #0f1032;
+    background-color: #aa9b49;
     color: whitesmoke;
     margin-top: 22px;
     cursor: pointer;
@@ -130,9 +130,9 @@ button {
 
 button:hover {
     background-color: whitesmoke;
-    color: rgb(29, 16, 55);
+    color: #aa9b49;
     font-weight: bold;
-    border: 1px solid rgb(29, 16, 55);
+    border: 1px solid #aa9b49;
     box-shadow: 8px 10px 10px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -140,7 +140,8 @@ button:hover {
     position: relative;
     background: url("room2.png");
     background-size: cover;
-    background-color: #0f1032;
+    background-color: rgb(34,34,34);
+    height: 100vh;
 }
 
 .frontpage::before {
@@ -171,8 +172,8 @@ button:hover {
     align-items: center;
     width: 100%;
     justify-content: center;
-    background-color: #0f1032;
-    border-bottom: 2px solid rgb(216, 185, 10);
+    /* background-color: #0f1032; */
+    /* border-bottom: 2px solid rgb(216, 185, 10); */
 }
 
 .navbar ul {
@@ -206,7 +207,7 @@ button:hover {
 /* } */ 
 
 .navbar #navbarmain li div:hover {
-    background-color: #242777;
+    background-color: rgba(154, 126, 40, 0.502);
     border: 1px solid whitesmoke;
 }
 
@@ -286,28 +287,31 @@ a img:hover{
 /* Kitchen */
 
 .kitchen {
-    background-color: white;
+    /* background-color: rgb(12, 11, 6); */
+    background-color: rgba(12, 11, 6, 0.914);
+    padding: 60px;
 }
 
 .kitchen #intro {
     text-align: center;
     font-size: 50px;
     margin: 18px;
-    font-family: "Signika Negative", sans-serif;
+    font-family: serif;
+    color: whitesmoke;
 }
 
 .kitchen #sum1,
 #sum2 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: sans-serif;
     text-align: center;
-    font-size: 18px;
-    color: var(--text-color);
+    font-size: 22px;
+    color: rgb(154, 130, 53);
     margin: 0px 18px 18px 18px;
     padding: 15px;
 }
 
 .kitchen #sum2 {
-    font-size: 15px;
+    font-size: 20px;
     padding-bottom: 12px;
 }
 
@@ -380,21 +384,21 @@ a img:hover{
     text-align: center;
     font-size: 50px;
     margin: 18px;
-    font-family: "Signika Negative", sans-serif;
+    font-family: serif;
 }
 
 .rooms #rsum1,
 #rsum2 {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     margin: 0px 18px 18px 18px;
     padding: 15px;
-    color: var(--text-color);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(154, 130, 53);
+    font-family: sans-serif;
 }
 
 .rooms #rsum2 {
-    font-size: 15px;
+    font-size: 20px;
     padding-bottom: 12px;
 }
 
@@ -404,11 +408,12 @@ a img:hover{
 .roomspic {
     /* border: 2px solid red; */
     display: flex;
+    max-width: 70vw;
+    margin: auto;
 }
 
 .roomspic img {
-    width: 47%;
-    padding: 30px;
+    width: 50%;
 }
 
 .rdesc {
@@ -417,6 +422,7 @@ a img:hover{
     padding-left: 32px;
     padding-right: 22px;
     font-size: 15px;
+    background-color: #eeede8;
 }
 
 #r1,
@@ -433,7 +439,16 @@ a img:hover{
 /* ABout Us */
 
 .about {
-    background-color: white;
+    background-color: rgb(246, 245, 240);
+    /* max-width: 80vw; */
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 190px;
+    padding-right: 190px;
+    background-image: url("about_bg2.jpg");
+    background-size: cover;
 }
 
 .aboutpic {
@@ -453,21 +468,21 @@ a img:hover{
     text-align: center;
     font-size: 50px;
     margin: 18px;
-    font-family: "Signika Negative", sans-serif;
+    font-family: serif;
 }
 
 .about #asum1,
 #asum2 {
     text-align: center;
-    font-size: 18px;
-    color: var(--text-color);
+    font-size: 22px;
+    color: rgb(154, 130, 53);
     margin: 0px 18px 18px 18px;
     padding: 15px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 .about #asum2 {
-    font-size: 15px;
+    font-size: 20px;
     padding-bottom: 12px;
 }
 
@@ -484,7 +499,7 @@ a img:hover{
 .adesc {
     flex-direction: column;
     padding: 20px;
-    padding-top: 96px;
+    padding-top: 56px;
     font-size: 18px;
 }
 
@@ -496,6 +511,11 @@ a img:hover{
 
 /* contact Us */
 
+.contact {
+    background-color: rgba(12, 11, 6, 0.902);
+    padding: 50px;
+    margin-top: 30px;
+}
 
 .contdata {
     position: relative;
@@ -503,7 +523,7 @@ a img:hover{
 
 .contdata::before {
     content: "";
-    background: url(contact.jpg) no-repeat center center/cover;
+    /* background: url(contact.jpg) no-repeat center center/cover; */
     position: absolute;
     height: 100%;
     width: 100%;
@@ -515,18 +535,18 @@ a img:hover{
     text-align: center;
     font-size: 55px;
     margin: 18px;
-    font-family: "Signika Negative", sans-serif;
-    color: black;
+    font-family: serif;
+    color: whitesmoke;
 }
 
 .contact #csum1,
 #csum2 {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     margin: 0px 18px 0px 18px;
     padding: 15px;
-    color: var(--text-color);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(154, 130, 53);
+    font-family: sans-serif;
 }
 
 
@@ -539,6 +559,8 @@ a img:hover{
     display: flex;
     flex-direction: column;
     height: 70vh;
+    background-image: url("op-contact.jpg");
+    background-size: cover;
 }
 
 .contdata #form {
@@ -547,12 +569,12 @@ a img:hover{
     justify-content: center;
     width: 20%;
     margin: 30px auto;
-    background-color: #9597d1a6;;
-    border-radius: 10px;
-    padding: 20px;
+    background-color: rgba(21, 19, 14, 0.912);
+    border-radius: 5px;
+    padding: 50px;
     font-weight: 600;
-    color: rgb(29, 16, 55);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-family: sans-serif;
 }
 
 form input {
@@ -567,6 +589,8 @@ form input {
     font-weight: bold;
     padding-left: 200px;
     padding-right: 200px;
+    color: whitesmoke;
+    text-align: center;
 }
 
 .contdata .btn {
@@ -579,17 +603,19 @@ form input {
 }
 
 .info-boxes input{
-    background-color: rgba(235, 231, 231, 0.63);
-    border: 1px solid white;
-    color: black;
-    border-radius: 7px;
+    background-color: rgba(100, 93, 77, 0.414);
+    /* border: 1px solid white; */
+    color: whitesmoke;
+    /* border-radius: 7px; */
     font-weight: 500;
+    border: none;
 }
 
 #form textarea{
     margin-top: 6px;
-    background-color: rgba(235, 231, 231, 0.63);
-    border: 1px solid white;
+    background-color: rgba(100, 93, 77, 0.414);
+    border: none;
+    color: whitesmoke;
 }
 
 #fissue {
@@ -607,11 +633,11 @@ form input {
 footer {
     font-size: 12px;
     font-weight: 600;
-    background-color: #0f1032;
+    background-color: rgba(0, 0, 0, 0.97);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 100px;
     padding-top: 7px;
 }
