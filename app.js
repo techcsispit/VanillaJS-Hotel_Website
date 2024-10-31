@@ -10,7 +10,7 @@ hamburger.addEventListener("click", () => {
 const toggle = document.getElementById("toggle");
 toggle.addEventListener("change", function () {
     const divs = document.querySelectorAll(".darkeffect");
-    const divs2 = document.querySelectorAll(".subdarkeffect");
+    const conts = document.querySelectorAll(".rdesc");
     const navbarLinks = document.querySelectorAll("ul#navbarmain li a");
     const logo = document.getElementById("logo1");
     const socialIcons = document.querySelectorAll(".social-icons a");
@@ -19,19 +19,18 @@ toggle.addEventListener("change", function () {
     if (this.checked) {
         // Dark mode
         divs.forEach(div => {
-            div.style.backgroundColor = "#0f1032";
+            div.style.backgroundColor = "rgba(12, 11, 6, 0.931)";
+            document.querySelector(".about").innerHTML = "";
+            document.body.querySelector(".about").style.background = "url('aboutUS2.jpg')";
             div.style.color = "white";
         });
 
-        divs2.forEach(div => {
-            div.style.backgroundColor = "#0f1032";
-            div.style.color = "#ccab1c";
+        conts.forEach(cont => {
+            cont.style.backgroundColor = "black)";
+            cont.style.color = "white";
         });
 
-
-        document.body.querySelector(".navbar").style.backgroundColor = "#16174c";
-        document.body.querySelector("footer").style.backgroundColor = "#0f1032";
-        document.body.querySelector(".contact").style.color = "white";
+    
         document.body.querySelectorAll("button").forEach(button => {
             button.style.backgroundColor = "#be8500";
         });
@@ -51,7 +50,7 @@ toggle.addEventListener("change", function () {
 
         body.style.margin = "0";
         body.style.padding = "0";
-        body.style.backgroundColor = "#0f1032";
+        // body.style.backgroundColor = "rgba(12, 11, 6, 0.931)";
     } else {
         // Light mode
         logo.src = "VanillaJS-Hotel_Website/socials/logo.png";
